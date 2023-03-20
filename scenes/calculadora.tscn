@@ -1,0 +1,171 @@
+[gd_scene load_steps=3 format=3 uid="uid://62s0p873rdwg"]
+
+[ext_resource type="Script" path="res://scenes/calculadora.gd" id="1_m530q"]
+
+[sub_resource type="FontVariation" id="FontVariation_24lp2"]
+
+[node name="Calculadora" type="Node2D"]
+script = ExtResource("1_m530q")
+
+[node name="zero" type="Button" parent="."]
+offset_left = 20.0
+offset_top = 438.0
+offset_right = 180.0
+offset_bottom = 507.0
+text = "0"
+
+[node name="ponto" type="Button" parent="."]
+offset_left = 192.0
+offset_top = 440.0
+offset_right = 267.0
+offset_bottom = 507.0
+text = "."
+
+[node name="um" type="Button" parent="."]
+offset_left = 21.0
+offset_top = 362.0
+offset_right = 96.0
+offset_bottom = 429.0
+text = "1"
+
+[node name="dois" type="Button" parent="."]
+offset_left = 105.0
+offset_top = 362.0
+offset_right = 180.0
+offset_bottom = 429.0
+text = "2"
+
+[node name="tres" type="Button" parent="."]
+offset_left = 190.0
+offset_top = 363.0
+offset_right = 265.0
+offset_bottom = 430.0
+text = "3"
+
+[node name="quatro" type="Button" parent="."]
+offset_left = 21.0
+offset_top = 286.0
+offset_right = 96.0
+offset_bottom = 353.0
+text = "4"
+
+[node name="cinco" type="Button" parent="."]
+offset_left = 105.0
+offset_top = 286.0
+offset_right = 180.0
+offset_bottom = 353.0
+text = "5
+"
+
+[node name="seis" type="Button" parent="."]
+offset_left = 190.0
+offset_top = 287.0
+offset_right = 265.0
+offset_bottom = 354.0
+text = "6"
+
+[node name="sete" type="Button" parent="."]
+offset_left = 21.0
+offset_top = 210.0
+offset_right = 96.0
+offset_bottom = 277.0
+text = "7"
+
+[node name="oito" type="Button" parent="."]
+offset_left = 104.0
+offset_top = 211.0
+offset_right = 179.0
+offset_bottom = 278.0
+text = "8"
+
+[node name="nove" type="Button" parent="."]
+offset_left = 190.0
+offset_top = 211.0
+offset_right = 265.0
+offset_bottom = 278.0
+text = "9"
+
+[node name="limpar_tela" type="Button" parent="."]
+offset_left = 22.0
+offset_top = 134.0
+offset_right = 97.0
+offset_bottom = 201.0
+text = "C
+"
+
+[node name="menor_que" type="Button" parent="."]
+offset_left = 105.0
+offset_top = 135.0
+offset_right = 180.0
+offset_bottom = 202.0
+text = "<"
+
+[node name="divisao" type="Button" parent="."]
+offset_left = 191.0
+offset_top = 135.0
+offset_right = 266.0
+offset_bottom = 202.0
+text = "/"
+
+[node name="soma" type="Button" parent="."]
+offset_left = 287.0
+offset_top = 289.0
+offset_right = 362.0
+offset_bottom = 356.0
+text = "+"
+
+[node name="subtracao" type="Button" parent="."]
+offset_left = 286.0
+offset_top = 211.0
+offset_right = 361.0
+offset_bottom = 278.0
+text = "-"
+
+[node name="multiplicacao" type="Button" parent="."]
+offset_left = 286.0
+offset_top = 136.0
+offset_right = 361.0
+offset_bottom = 203.0
+text = "X"
+
+[node name="igual" type="Button" parent="."]
+offset_left = 286.0
+offset_top = 365.0
+offset_right = 361.0
+offset_bottom = 509.0
+text = "="
+
+[node name="controle" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 377.0
+offset_bottom = 122.0
+
+[node name="resultado" type="Label" parent="controle"]
+layout_mode = 0
+offset_right = 380.0
+offset_bottom = 125.0
+theme_override_fonts/font = SubResource("FontVariation_24lp2")
+theme_override_font_sizes/font_size = 60
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[connection signal="pressed" from="zero" to="." method="_on_zero_pressed"]
+[connection signal="pressed" from="ponto" to="." method="_on_ponto_pressed"]
+[connection signal="pressed" from="um" to="." method="_on_um_pressed"]
+[connection signal="pressed" from="dois" to="." method="_on_dois_pressed"]
+[connection signal="pressed" from="tres" to="." method="_on_tres_pressed"]
+[connection signal="pressed" from="quatro" to="." method="_on_quatro_pressed"]
+[connection signal="pressed" from="cinco" to="." method="_on_cinco_pressed"]
+[connection signal="pressed" from="seis" to="." method="_on_seis_pressed"]
+[connection signal="pressed" from="sete" to="." method="_on_sete_pressed"]
+[connection signal="pressed" from="oito" to="." method="_on_oito_pressed"]
+[connection signal="pressed" from="nove" to="." method="_on_nove_pressed"]
+[connection signal="pressed" from="limpar_tela" to="." method="_on_limpar_tela_pressed"]
+[connection signal="pressed" from="menor_que" to="." method="_on_menor_que_pressed"]
+[connection signal="pressed" from="divisao" to="." method="_on_divisao_pressed"]
+[connection signal="pressed" from="soma" to="." method="_on_soma_pressed"]
+[connection signal="pressed" from="subtracao" to="." method="_on_subtracao_pressed"]
+[connection signal="pressed" from="multiplicacao" to="." method="_on_multiplicacao_pressed"]
+[connection signal="pressed" from="igual" to="." method="_on_igual_pressed"]
