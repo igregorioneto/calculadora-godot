@@ -11,7 +11,7 @@
 <img src="https://img.shields.io/static/v1?label=CalculadoraGodot&message=Greg%C3%B3rioNeto&color=7159c1&style=for-the-badge&logo=ghost">
 
 <h1 align="center">
-  <img alt="Findfood" title="#Findfood" src="https://i.picasion.com/pic91/b77a291dd272dee86cccbf69d0e60d1a.gif" />
+  <img alt="CalculadoraGodot" title="#CalculadoraGodot" src="https://github.com/igregorioneto/calculadora-godot/blob/main/assets/calculadora-godot.png?raw=true" />
 </h1>
 
 <p align="center">
