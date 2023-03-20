@@ -38,7 +38,7 @@ Tecnologias:
 
 <p align="center">
 
-[Angular CLI](https://docs.godotengine.org/en/stable/index.html) version 4.0.
+[GODOT](https://docs.godotengine.org/en/stable/index.html) version 4.0.
 
 </p>
 
